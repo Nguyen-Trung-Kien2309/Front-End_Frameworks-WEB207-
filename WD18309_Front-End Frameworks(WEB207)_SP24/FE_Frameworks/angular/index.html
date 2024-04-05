@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="libs/angular.min.js"></script>
+</head>
+
+<body ng-app="myApp">
+    <div ng-controller="infoController">
+        <!-- <h1>{{welcome}}</h1> -->
+        <!-- Tên đối tượng.thuộc tính -->
+        <!-- <h2>{{sinhVien.maSV}}</h2>
+        <h2>{{sinhVien.tenSV}}</h2>
+        <h2>{{sinhVien.namSinh}}</h2>
+        <h2 ng-if="namHienTai - sinhVien.namSinh > 18">Đủ tuổi đi tò</h2>
+        <span ng-switch="sinhVien.namSinh">
+            <span ng-switch-when="2008">Chưa đủ tuổi</span>
+            <span ng-switch-when="2004">Đủ tuổi</span>
+        </span> -->
+
+        <table border="1">
+            <tr>
+                <th>STT</th>
+                <th>Mã sinh viên</th>
+                <th>Họ và tên</th>
+                <th>Năm sinh</th>
+            </tr>
+            <tr ng-repeat="sv in sinhvien">
+                <td>{{$index + 1}}</td>
+                <td>{{sv.maSV}}</td>
+                <td>{{sv.tenSV}}</td>
+                <td>{{sv.namSinh}}</td>
+            </tr>
+        </table>
+    </div>
+    <script src="controller/app.js"></script>
+</body>
+</html>

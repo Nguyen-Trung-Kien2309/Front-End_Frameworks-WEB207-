@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Latest compiled JavaScript -->
+  <link
+  href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+  rel="stylesheet"
+/>
+<title>Bootstrap Example</title>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    /* .container {
+      display: flex;
+      background-color: rgb(255, 132, 0);
+      width: 40%;
+      margin-top: 50px;
+    }
+
+    .required {
+      color: red;
+    }
+
+    .colum {
+      flex: 1;
+      padding: 10px;
+    } */
+    h1,
+    h3 {
+      color: rgb(46 49 146);
+    }
+
+    input {
+      height: 45px;
+
+    }
+
+    select {
+      height: 45px;
+    }
+  </style>
+</head>
+
+<body class="bg-body-secondary  ">
+  <img src="img/Banner.png" alt="" class="img-fluid" width="100%" height="auto" />
+  <div class="container-fluid ">
+
+    <div class="container-xl">
+      <h1 class="text-center fw-bolder m-lg-5">PHIẾU ĐĂNG KÝ HỌC</h1>
+
+      <form action="" class="Larger shadow form-control mb-2  needs-validation" novalidate="">
+        <div class="mx-5 my-5  ">
+
+          <ul class="d-flex text-center mb-4">
+            <h2 class="bg-danger rounded-1 mt-1 me-3 " style="width: 25px; height: 25px;"></h2>
+            <h3>
+              <!-- <button style="height: 23px; width: 20px;" class="form-check-inline bg-danger">
+
+</button> -->
+              THÔNG TIN THÍ SINH
+            </h3>
+          </ul>
+          <ul class="row g-3 fw-bold mb-5  needs-validation  "novalidate>
+            <div class="col-md-3 ">
+              <label for="" class="pb-2">Họ và tên</label>
+              <div>
+                <input type="text" name="" id="" class="form-control shadow-sm   bg-body-tertiary rounded"
+                  placeholder="Họ và tên" required>
+                  <div class="invalid-feedback">Vui lòng điền thông tin </div>
+          
+                </div>
+            </div>
+            <div class="col-md-3">
+              <label for="" class="pb-2">Ngày sinh</label>
+              <div>
+                <input type="text" name="" id="" class="form-control shadow-sm   bg-body-tertiary rounded"
+                required placeholder="DD/MM/YYYY">
+                 <div class="invalid-feedback">Vui lòng điền thông tin </div>
+          
+                </div>
+            </div>
+            <div class="col-md-3">
+              <label for="" class="pb-2">Giới tính</label>
+              <div>
+                <select name="" id="" class="form-select" readonly >
+                  <option value="">Nam</option>
+                  <option value="">Nữ</option>
+                </select>
+
+              </div>
+            </div>
+            <div class="col-md-3 ">
+              <label for="" class="pb-2">Dân tộc</label>
+              <div>
+                <input type="text" name="" id="" class="form-control shadow-sm   bg-body-tertiary rounded"
+                 required  placeholder="Kinh">
+                <div class="invalid-feedback">Vui lòng điền thông tin </div>
+          
+              </div>
+            </div>
+          </ul>
+          <ul class="row g-3 fw-bold mb-5  needs-validation  "novalidate>
+            <div class="col-md-4 ">
+              <label for="" class="pb-2">Số CCCD/Chứng minh nhân dân</label>
+              <div>
+                <input type="text" name="" id="" class="form-control shadow-sm   bg-body-tertiary rounded"
+                required  placeholder="0123456789">
+                  <div class="invalid-feedback">Vui lòng điền thông tin </div>
+          
+                </div>
+            </div>
+            <div class="col-md-4">
+              <label for="" class="pb-2">Ngày cấp</label>
+              <div>
+                <input type="text" name="" id="" class="form-control shadow-sm   bg-body-tertiary rounded"
+                required  placeholder="DD/MM/YYYY">
+                <div class="invalid-feedback">Vui lòng điền thông tin </div>
+          
+              </div>
+            </div>
+
+            <div class="col-md-4 ">
+              <label for="" class="pb-2"> Nơi cấp</label>
+              <div>
+                <input type="text" name="" id="" class="form-control shadow-sm   bg-body-tertiary rounded"
+                 required placeholder="Thái bình">
+                 <div class="invalid-feedback">Vui lòng điền thông tin </div>
+          
+                </div>
+            </div>
+          </ul>
+          <div>
+            <ul class="row g-3 fw-bold mb-5  needs-validation  "novalidate>
+              <label for="" class="pb-2">Nơi thường trú (Điền thông tin đầy đủ như trong CMND/CCCD)</label>
+              <div class="col-md-3">
+
+                <div>
+                  <select name="" id="" class="form-select" required>
+                    <option value="">Chọn tỉnh/thành phố</option>
+                    <option value="">Thái bình</option>
+                    <option value="">Hà nội</option>
+                  </select>
+                  <div class="invalid-feedback">Vui lòng điền thông tin </div>
+          
+                </div>
+              </div>
+
+              <div class="col-md-3">
+
+                <div>
+                  <select name="" id="" class="form-select" required>
+                    <option value="">Quận /huyện</option>
+                    <option value="">Thái bình</option>
+                    <option value="">Hà nội</option>
+                  </select>
+                  <!-- <input type="text" name="" id="" class="form-control" placeholder="DD/MM/YYYY"> -->
+                  <div class="invalid-feedback">Vui lòng điền thông tin </div>
+          
+                </div>
+              </div>
+              <div class="col-md-3">
+                <!-- <label for="" class="pb-2">Giới tính</label> -->
+                <div>
+                  <select name="" id="" class="form-select" required>
+                    <option value="">Xã/phường /thị trấn</option>
+                    <option value="">Nữ</option>
+                  </select>
+                  <div class="invalid-feedback">Vui lòng điền thông tin </div>
+          
+                </div>
+              </div>
+              <div class="col-md-3 ">
+                <!-- <label for="" class="pb-2">Dân tộc</label> -->
+                <div>
+                  <input type="text" name="" id="" class="form-control shadow-sm   bg-body-tertiary rounded"
+                   required placeholder="Số nhà, số ngõ ">
+                   <div class="invalid-feedback">Vui lòng điền thông tin </div>
+          
+                  </div>
+              </div>
+            </ul>
+          </div>
+          <ul class="row g-3 fw-bold mb-5  needs-validation  "novalidate>
+            <div class="col-md-3 ">
+              <label for="" class="pb-2">Số điện thoại thí sinh</label>
+              <div>
+                <input type="text" name="" id="" class="form-control shadow-sm   bg-body-tertiary rounded"
+                 required placeholder="0123456789">
+                 <div class="invalid-feedback">Vui lòng điền thông tin </div>
+          
+                </div>
+            </div>
+            <div class="col-md-3">
+              <label for="" class="pb-2">Email thí sinh</label>
+              <div>
+                <input type="text" name="" id="" class="form-control shadow-sm   bg-body-tertiary rounded"
+                 readonly placeholder="ẽample@gmail.com">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="" class="pb-2">Họ tên phụ huynh/người bảo trợ</label>
+              <div>
+                <input type="text" name="" id="" class="form-control shadow-sm   bg-body-tertiary rounded"
+                 required placeholder="Họ và tên">
+                 <div class="invalid-feedback">Vui lòng điền thông tin </div>
+          
+              </div>
+            </div>
+            <div class="col-md-3 ">
+              <label for="" class="pb-2">Số điện thoại phụ huynh/bảo trợ
+              </label>
+              <div>
+                <input type="text" name="" id="" class="form-control shadow-sm   bg-body-tertiary rounded"
+               required   placeholder="0123456789">
+               <div class="invalid-feedback">Vui lòng điền thông tin </div>
+          
+              </div>
+            </div>
+          </ul>
+
+
+          <div>
+            <ul class="d-flex text-center mb-4">
+              <h2 class="bg-danger rounded-1 mt-1 me-3 " style="width: 25px; height: 25px;"></h2>
+              <h3>THÔNG TIN ĐĂNG KÝ TRƯỜNG CAO ĐẲNG FPT POLYTECHNIC</h3>
+          </div>
+          </ul>
+          <ul class="row g-3 fw-bold mb-5">
+            <div class="col-md-6 ">
+              <label for="" class="pb-2">Cơ sở nhập học</label>
+              <div>
+                <!-- <input type="text" name="" id="" class="form-control" placeholder="Họ và tên">
+  </div> -->
+                <select name="" id="" class="form-select">
+                  <option value="">Hà nội</option>
+                  <option value="">Nữ</option>
+                </select>
+              </div>
+
+          </ul>
+          <ul class="row g-3 fw-bold mb-5">
+            <div class="col-md-3 needs-validation  "novalidate>
+              <label for="" class="pb-2">Nguyện vọng thứ nhất</label>
+
+              <div>
+                <select name="" id="" class="form-select" required>
+                  <option value="">Chuyên Ngành</option>
+                  <option value="">Nữ</option>
+                </select>
+                <div class="invalid-feedback">Vui lòng điền thông tin </div>
+          
+
+                <!-- <input type="text" name="" id="" class="form-control" placeholder="Họ và tên"> -->
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="" class="pb-lg-4"> </label>
+              <div class="pt-1">
+                <!-- <input type="text" name="" id="" class="form-control" placeholder="DD/MM/YYYY">
+  -->
+                <select name="" id="" class="form-select ">
+                  <option value="">Ngành</option>
+                  <option value="">Nữ</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="" class="pb-2">Nguyện vọng thứ hai </label>
+
+              <div>
+                <select name="" id="" class="form-select">
+                  <option value="">Chuyên ngành</option>
+                  <option value="">Nữ</option>
+                </select>
+
+              </div>
+            </div>
+            <div class="col-md-3 ">
+              <label for="" class="pb-2"></label>
+              <div class="pt-2">
+                <!-- <input type="text" name="" id="" class="form-control" placeholder="Kinh">
+  -->
+                <select name="" id="" class="form-select">
+                  <option value="">Ngành</option>
+                  <option value="">Nữ</option>
+                </select>
+
+              </div>
+            </div>
+          </ul>
+          <ul class="row g-3 fw-bold mb-5">
+            <div class="col-md-6 ">
+              <label for="" class="pb-2">Năm tốt nghiệp THPT hoặc tương đương</label>
+              <div>
+                <!-- <input type="text" name="" id="" class="form-control" placeholder="Họ và tên">
+ 
+  -->
+                <select name="" id="" class="form-select">
+                  <option value="">2024</option>
+                  <option value="">Nữ</option>
+                </select>
+
+              </div>
+            </div>
+            <div class="col-md-6 needs-validation  "novalidate>
+              <label for="" class="pb-2">Trường tốt nghiệp THPT hoặc tương đương</label>
+              <div>
+                <input type="text" name="" id="" class="form-control" required placeholder="Trường">
+                <div class="invalid-feedback">Vui lòng điền thông tin </div>
+              </div>
+            </div>
+
+          </ul>
+          <ul class="row g-3 fw-bold mb-5 needs-validation  "novalidate>
+            <div class="col-md-4 "  >
+              <label for="" class="pb-2">Nơi tốt nghiệp</label>
+              <div>
+                <!-- <input type="text" name="" id="" class="form-control" placeholder="Họ và tên">
+    -->
+                <select name="" id="" class="form-select " required>
+                  <option value="">Chọn tỉnh /thành phố</option>
+                  <option value="erdg">Nữ</option>
+                </select>
+                <div class="invalid-feedback">Vui lòng điền thông tin </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="" class="pb-2"></label>
+              <div class="pt-2">
+                <!-- <input type="text" name="" id="" class="form-control" required placeholder="DD/MM/YYYY">
+    -->
+                <select name="" id="" class="form-select" required>
+                  <option value="">Quận/huyện</option>
+                  <option value="">Nữ</option>
+                </select>
+                <div class="invalid-feedback">Vui lòng điền thông tin </div>
+              
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="" class="pb-2"></label>
+              <div class="pt-2">
+                <select name="" id="" class="form-select" required>
+                  <option value="">Phường/thị trấn</option>
+                  <option value="">Nữ</option>
+                </select>
+                <div class="invalid-feedback">Vui lòng điền thông tin </div>
+              
+              </div>
+            </div>
+
+          </ul>
+
+          <div>
+            <ul class="d-flex text-center ">
+              <h2 class="bg-danger rounded-1 mt-1 me-3 mb-4 " style="width: 25px; height: 25px;"></h2>
+              <h3>THÔNG TIN NHẬN GIẤY BÁO KẾT QUẢ</h3>
+          </div>
+          </ul>
+          <div class="row mb-4 needs-validation  "novalidate>
+            <div class="col-md-6 ">
+              <ul>
+                <label for="" class="pb-2 fw-bold">Người nhận</label><br>
+             
+                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" required aria-label="...">
+                  Thí sinh
+                  <br>
+                 
+              
+            
+                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" required="" aria-label="...">
+                  Phụ huynh/Người bảo trợ
+                 <div class="invalid-feedback">Example invalid form file feedback</div>
+                
+              </ul> 
+            </div>
+            <div class="col-md-6 needs-validation  "novalidate >
+            
+                <label for="" class="pb-2 fw-bold">Địa chỉ nhận</label><br>
+                
+                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value=""required aria-label="...">
+                  Địa chỉ thường trú
+                <br>
+                  <input class="form-check-input er" type="checkbox" id="checkboxNoLabel" value="" required aria-label="...">
+                  Khác
+                
+      
+               <div class="invalid-feedback">Example invalid form file feedback</div>
+           
+              </div>
+
+          </div>
+
+
+
+
+
+          <div>
+            <ul class="d-flex text-center ">
+              <h2 class="bg-danger rounded-1 mt-1 me-3 mb-4 " style="width: 25px; height: 25px;"></h2>
+              <h3>TẢI LÊN GIẤY TỜ XÁC THỰC HỒ SƠ ĐĂNG KÝ HỌC</h3>
+            </ul>
+          </div>
+
+          <ul class="row  needs-validation  "novalidate>
+            <div class="col-md-3   ">
+              <label for="" class=" fw-bold">Ảnh CMND/CCCD mặt trước
+
+              </label>
+              <p class="fw-medium text-black-50  pb-2"> (bắt buộc)</p>
+              <div class="mb-3">
+                <input type="file" class="form-floating " aria-label="file example" required>
+                <div class="invalid-feedback">Example invalid form file feedback</div>
+              </div>
+            </div>
+
+            <div class="col-md-3 ">
+              <label for="" class=" fw-bold">Ảnh CMND/CCCD mặt trước
+
+              </label>
+              <p class="fw-medium text-black-50  pb-2"> (bắt buộc)</p>
+              <div class="mb-3">
+                <input type="file" class="form-floating" aria-label="file example" required>
+                <div class="invalid-feedback">Example invalid form file feedback</div>
+              </div>
+            </div>
+            <div class="col-md-6 ">
+              <label for="" class=" fw-bold">Ảnh CMND/CCCD mặt trước
+
+              </label>
+              <p class="fw-medium text-black-50  pb-2">
+                Hoặc giấy chứng nhận tốt nghiệp tạm thời (không bắt buộc)</p>
+              <div class="mb-3">
+                <input type="file" aria-label="file example" >
+                <div class="invalid-feedback">Example invalid form file feedback</div>
+              </div>
+            </div>
+          </ul>
+          <div class="row mx-3">
+            <ul class="col-7 fw-light needs-validation  "novalidate>
+
+              <div>
+                <input class="form-check-input" required type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                Tôi xin cam đoan những lời khai của tôi trên phiếu đăng ký này là đúng sự thật. Nếu sai tôi hoàn toàn
+                chịu trách nhiệm và nhận xử lý theo <a href="https://caodang.fpt.edu.vn/tuyen-sinh/quy-che.html">Quy chế
+                  tuyển sinh</a> cao đẳng hiện hành
+                  <div class="invalid-feedback">Vui lòng điền thông tin </div>
+             
+              </div><div>
+              <input class="form-check-input" required type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+              Tôi đã đọc kỹ và cam kết tuân thủ Quy định tài chính của nhà trường
+              <div class="invalid-feedback">Vui lòng điền thông tin </div>
+              
+            </div>
+          </ul></div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="text-center mb-5 ">
+          <button type="submit"
+            class="btn custom-btn text-light   btn-dark btn-outline-primary  rounded-0 btn-lg mt-5 bs-body-bg-rgb px-4 p-3" >GỬI HỒ
+            SƠ ĐĂNG KÝ</button>
+        </div>
+   
+  </form>
+ </div>
+  </div>
+
+  </div>
+  </div>
+  <script src="la2.js"></script>
+</body>
+
+</html>

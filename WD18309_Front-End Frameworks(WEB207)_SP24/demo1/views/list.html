@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#!/product/add">Them</a>
+    <table border="1">
+<tr>
+    <th>ID</th>
+    <th>Name Products</th>
+    <th>price</th>
+    <th>Action</th>
+</tr>
+<tr ng-repeat="item in products">
+    <td>{{item.id}}</td>
+    <td>{{item.name}}</td>
+    <td>{{item.price}}</td>
+<td><button ng-click="onDelete(item.id)">delete</button> || <button ng-click="onEdit(item.id)">edit</button></td>
+</tr>
+    </table>
+</body>
+</html>

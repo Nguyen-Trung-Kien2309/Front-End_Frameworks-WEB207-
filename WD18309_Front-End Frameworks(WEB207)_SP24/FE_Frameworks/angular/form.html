@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="libs/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+    <div ng-controller="infoController">
+        <!-- ng-model được sử dụng để buộc dữ liệu 2 chiều từ $scope
+        vào các điều khiển của form như input, select, textarea -->
+        <!-- <h1>Test ng-model</h1>
+        <input type="text" ng-model="test">
+        <br>
+        <h2>Đã nhập: {{test}}</h2> -->
+
+        <!-- radio -->
+        <!-- <h1>Giới tính</h1>
+        <br>
+        <input type="radio" ng-model="gender" value="1"> Nam
+        <input type="radio" ng-model="gender" value="2"> Nữ
+        <br>
+        <button ng-click="submit()">Gửi đi</button> -->
+
+        <!-- checkbox -->
+        <!-- <h1>Danh sách tạch môn</h1>
+        <br>
+        <input type="checkbox" ng-model="input.danhSach.ALL"> ALL
+        <br> -->
+        <!-- Sử dụng ng-checked để kiểm soát trạng thái của các checkbox
+        dựa trên checkbox ALL -->
+        <!-- <input type="checkbox" ng-model="input.danhSach.A" 
+        ng-checked="input.danhSach.ALL"> Nguyễn Mạnh Tâm <br>
+        <input type="checkbox" ng-model="input.danhSach.B" 
+        ng-checked="input.danhSach.ALL"> Phạm Thị Thùy Trang <br>
+        <input type="checkbox" ng-model="input.danhSach.C" 
+        ng-checked="input.danhSach.ALL"> Nguyễn Thành Công <br>
+        <button ng-click="submit()">Gửi</button> -->
+
+        <!-- select - option -->
+        <h1>Đồ uống lành mạnh</h1>
+        <!-- ng-options -->
+        <!-- <select ng-model="selectedItem" 
+        ng-options="item.name for item in danhMuc"></select>
+        <br> -->
+        <!-- ng-repeat -->
+        <select ng-model="selectedItem">
+            <option ng-repeat="item in danhMuc" 
+            value="{{item.id}}">{{item.name}}</option>
+        </select>
+        <br>
+        <button ng-click="submit()">Gửi</button>
+
+    </div>
+    <script src="controller/form.js"></script>
+</body>
+</html>

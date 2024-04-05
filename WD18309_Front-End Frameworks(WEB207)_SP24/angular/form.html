@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="libs/angular.min.js"></script>
+  </head>
+  <body ng-app="myApp">
+    <div ng-controller="infoController">
+      <form action="">
+        <!-- ng-model -->
+        <!-- <h1>teaar</h1>
+    <input type="text" ng-model="test">
+    <br>
+   <h2>Đã nhập: {{test}}</h2>  -->
+
+        <!-- radio -->
+        <!-- <h1>radio</h1>
+        <input type="radio" ng-model="input.gender" value="1" />Nam
+        <input type="radio" ng-model="input.gender" value="2" />Nu <br />
+        <button ng-onclick="submit()">Gửi</button>
+        
+        <br /> -->
+        
+        <!-- checkbox -->
+       <!-- <label for=""> dang sach</label><br>
+        <input type="checkbox" ng-model="input.danhsach.ALL"  />ALL<br> -->
+        <!-- sử dụng ng-checked để kiểm soát trạng thái của các chechbox
+         khác dựa tren các checkbox alll -->
+         <!-- <input type="checkbox" ng-model="input.danhsach.A" 
+          ng-checked="input.danhsach.ALL"name="" id="">ha <br>
+          <input type="checkbox" ng-model="input.danhsach.B" 
+          ng-checked="input.danhsach.ALL"name="" id="">hai<br>
+          <input type="checkbox" ng-model="input.danhsach.C" 
+          ng-checked="input.danhsach.ALL"name="" id="">hay<br>
+          
+        
+           <button ng-onclick="submit()">Gửi</button>
+        
+        <br /> -->
+
+        <!-- select - options -->
+        <label for="">do uong lanh manh</label><br>
+        <!--ng-options  -->
+        <select name=""ng-model="selectedItem" ng-options="item.name for item in danhMuc" id=""></select>
+        <button ng-onclick="submit()">Gửi</button>
+      </form>
+    </div>
+    <script src="controller/form.js"></script>
+  </body>
+</html>
