@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        height: 35px;
+      }
+      td {
+        height: 70px;
+      }
+      table {
+        margin: auto;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h2 class="pt-3">Add/Edit Employee Information</h2>
+      <br />
+      <form action="" class="larger shadow h-100 m-auto">
+        <h1 class="text-center text-primary p-3">Đây là trang edit</h1>
+        <div class="container-fluid border-black">
+          <label>Name:</label> <br />
+          <input type="text" class="form-control" ng-model="inputValue.name" />
+          <span ng-show="kiemTraDuLieu.name == true" style="color: red"
+            >Vui lòng nhập tên</span
+          >
+
+          <div class="mt-3">
+            <span class="form-label">Danh mục sản phẩm</span>
+            <select
+              name=""
+              id=""
+              class="form-control"
+              ng-model="inputValue.idDanhMuc"
+            >
+              <span ng-show="kiemTraDuLieu.idDanhMuc == true" style="color: red"
+                >Vui lòng nhập tên</span
+              >
+              <option value="{{dm.id}}" ng-repeat="dm in danhMucs">
+                {{dm.name}}
+              </option>
+            </select>
+          </div>
+          <label>Age:</label> <br />
+          <input type="number" class="form-control" ng-model="inputValue.age" />
+          <span ng-show="kiemTraDuLieu.age == true" style="color: red"
+            >Vui lòng nhập giá</span
+          ><br />
+          <label>Gender:</label> <br />
+          <input
+            type="text"
+            class="form-control"
+            ng-model="inputValue.gender"
+          />
+          <span ng-show="kiemTraDuLieu.gender == true" style="color: red"
+            >Vui lòng nhập giá</span
+          ><br />
+          <label>Salary:</label> <br />
+          <input
+            type="number"
+            class="form-control"
+            ng-model="inputValue.salary"
+          />
+          <span ng-show="kiemTraDuLieu.salary == true" style="color: red"
+            >Vui lòng nhập giá</span
+          ><br />
+        </div>
+        
+        <button ng-click="onEditForm()"class="btn btn-success mb-5 mx-4 ">Sửa</button>
+        <button class="btn btn-success mb-5">
+          <a href="#!/product/list">Quay lại</a>
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

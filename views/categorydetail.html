@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        height: 35px;
+      }
+      td {
+        height: 70px;
+      }
+      table {
+        margin: auto;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h2 class="pt-3">Add/Edit Employee Information</h2>
+      <br />
+      <form action="" class="larger shadow h-100 m-auto">
+        <h1 class="text-center text-primary p-3">Đây là trang chi tiết</h1>
+
+        <a href="#!/category/add" class="btn btn-primary mx-4">Thêm</a>
+        <table border="0" width="95%" height="40">
+          <tr align="center">
+            
+
+            <th>id</th>
+           <th width="500">Name</th>
+            <th width="400">Action</th>
+          </tr>
+          <tr  align="center">
+            <!-- <td>{{pr.id}}</td> -->
+            <td>{{p.id}}</td>
+            <td>{{p.name}}</td>
+
+            
+            <td>
+                <button class="btn btn-success ">
+                    <a href="#!/category/list">Quay lại</a>
+                  </button>
+            </td>
+          </tr>
+          <hr />
+        </table>
+        <hr />
+      </form>
+    </div>
+  </body>
+</html>

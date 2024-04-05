@@ -1,0 +1,44 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        height: 35px;
+      }
+      td {
+        height: 70px;
+      }
+      table {
+        margin: auto;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div  style="height: 400px;" class="container-fluid">
+      <h2 class="pt-3">Add/Edit Employee Information</h2>
+      <br />
+      <form action="" class="larger shadow h-100 m-auto">
+        <h1 class="text-center text-primary p-3">Đây là trang edit</h1>
+        <div class="container-fluid border-black">
+          <label>Name:</label> <br />
+          <input type="text" class="form-control" ng-model="inputValue.name" />
+          <span ng-show="kiemTraDuLieu.name == true" style="color: red"
+            >Vui lòng nhập tên</span
+          >
+
+         <br>
+        
+        <button ng-click="onEditForm()"style="margin-right: 20px;" class="btn btn-success mb-5">Sửa</button>
+        <button class="btn btn-success mb-5">
+          <a href="#!/category/list">Quay lại</a>
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

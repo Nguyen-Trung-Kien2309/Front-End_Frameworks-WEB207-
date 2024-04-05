@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/angular-route.js"></script>
+  </head>
+  <body ng-app="myController">
+    <header>Đây là đầu trang</header>
+    <nav>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+          aria-controls="collapseTwo">
+          <i class="fas fa-fw fa-cog"></i>
+          <span>Components</span>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Custom Components:</h6>
+            <a class="collapse-item" href="buttons.html">Buttons</a>
+            <a class="collapse-item" href="cards.html">Cards</a>
+          </div>
+        </div>
+      </li>
+      <ul>
+        
+            <li><a href="#!/product/list">List Product</a></li>
+          
+      </ul>
+    </nav>
+    <main>
+      <div ng-view></div>
+    </main>
+    <footer>Đây là cuối trang</footer>
+    <script src="route/route.js"></script>
+    <script src="controller/ProductListController.js"></script>
+    <script src="controller/ProductAddController.js"></script>
+    <script src="controller/ProductEditController.js"></script>
+    <script src="controller/ProductDetailController.js"></script>
+  </body>
+</html>

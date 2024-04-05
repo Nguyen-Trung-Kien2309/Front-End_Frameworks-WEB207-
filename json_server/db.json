@@ -1,0 +1,87 @@
+{
+  "products": [
+    {
+      "id": "5d10",
+      "name": "kien",
+      "idDanhMuc": "2",
+      "age": 123,
+      "gender": "name",
+      "salary": 111,
+      "tenDanhMuc": "Thiết bị máy tính - Phần mềm"
+    },
+    {
+      "id": "181f",
+      "name": "ha",
+      "idDanhMuc": "1",
+      "age": 122,
+      "gender": "bd",
+      "salary": 123,
+      "tenDanhMuc": "Internet & Telecom"
+    },
+    {
+      "name": "12",
+      "idDanhMuc": "992c",
+      "tenDanhMuc": "hi",
+      "age": 1,
+      "gender": "q1",
+      "salary": 1,
+      "id": "6ace"
+    },
+    {
+      "id": "98d0",
+      "name": "ưe",
+      "idDanhMuc": "1",
+      "age": 123,
+      "gender": "qứd",
+      "salary": 123,
+      "tenDanhMuc": "Internet & Telecom"
+    }
+  ],
+  "categorys": [
+    {
+      "id": "3140",
+      "name": "rgrtrfh"
+    },
+    {
+      "id": "bb1b",
+      "name": "grht"
+    }
+  ],
+  "danh-muc": [
+    {
+      "id": "DM01",
+      "ten": "Kem Nền"
+    },
+    {
+      "id": "DM02",
+      "ten": "Phấn Mắt"
+    },
+    {
+      "id": "DM03",
+      "ten": "Son"
+    }
+  ],
+  "san-pham": [
+    {
+      "id": "qwe",
+      "ten": "werf",
+      "anh": "sdfg",
+      "idDanhMuc": "DM03",
+      "tenDanhMuc": "Son"
+    },
+    {
+      "id": "ry",
+      "ten": "fhg",
+      "anh": "ygu",
+      "idDanhMuc": "DM01",
+      "tenDanhMuc": "Kem Nền"
+    },
+    {
+      "id": "àd",
+      "ten": "24qwrefd",
+      "anh": "ètr",
+      "idDanhMuc": "DM02",
+      "tenDanhMuc": "Phấn Mắt"
+    }
+  ]
+}

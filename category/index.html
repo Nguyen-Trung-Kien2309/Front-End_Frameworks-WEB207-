@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/angular-route.js"></script>
+</head>
+<body ng-app="myController">
+    <header>
+        Đây là đầu trang
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#!/category/list">List Category</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div ng-view></div>
+    </main>
+    <footer>
+        Đây là cuối trang
+    </footer>
+    <script src="route/route.js"></script>
+    <script src="category/controller/CategoryListController.js"></script>
+    <script src="controller/CategoryAddController.js"></script>
+    <script src="controller/CategoryEditController.js"></script>
+    <script src="controller/CategoryDetailController.js"></script>
+</body>
+</html>
